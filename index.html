@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Da Terra para a Mesa</title>
+  <style>
+        .justificado {
+            text-align: justify;
+            text-justify: inter-word; 
+        }
+        .titulo-com-espaco {
+            margin-bottom: 40px;
+        }
+        p {
+            text-indent: 3em;
+            margin-bottom: 1em;
+        }
+
+    body {
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #CAE8BD;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #075B5E;
+        }
+
+        .accessibility-controls {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #CAE8BD;
+            border-radius: 5px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+        }
+
+        .accessibility-controls button {
+            background-color: #075B5E;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.2s;
+        }
+
+        .accessibility-controls button:hover {
+            background-color: #064F52;
+        }
+        body.high-contrast {
+            background-color: #537D5D !important;
+            color: #fff !important;
+        }
+
+        body.high-contrast .container {
+            background-color: #537D5D !important;
+            border: 1px solid #CAE8BD !important;
+            box-shadow: none !important;
+        }
+
+       body.high-contrast h2 {
+            color: #075B5E !important;
+        }
+
+        body.high-contrast button {
+            background-color: #537D5D !important;
+            color: #CAE8BD !important;
+            border: 1px solid #537D5D !important;
+        }
+
+        body.high-contrast button:hover {
+            background-color: #537D5D !important;
+            opacity: 0.8;
+        }
+
+        body.font-small {
+            font-size: 0.9em;
+        }
+
+        body.font-medium {
+            font-size: 1em;
+        }
+
+        body.font-large {
+            font-size: 1.1em;
+        }
+
+        body.font-extra-large {
+            font-size: 1.2em;
+        }
+
+    </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header role="banner">
+    <h1>Da Terra para a Mesa</h1>
+    <nav role="navigation" aria-label="Menu principal">
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#imagem">Imagem</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+        <h1>Controle de Acessibilidade</h1>
+
+        <div class="accessibility-controls">
+            <h2>Tamanho da Fonte</h2>
+            <button id="decrease-font">A-</button>
+            <button id="reset-font">A</button>
+            <button id="increase-font">A+</button>
+
+            <h2>Contraste do Site</h2>
+            <button id="toggle-contrast">Alternar Contraste</button>
+        </div>
+
+  <main role="main">
+    <section id="home">
+      <h1 class="titulo-com-espaco">Da Terra para a Mesa: O Afeto e as Memórias nos Sabores do Interior</h1>
+      <p class="justificado">Bem-vindos ao nosso cantinho digital, onde cada sabor conta uma história e cada
+aroma evoca uma memória. "Da Terra para a Mesa" é mais do que um projeto; é uma
+celebração da culinária do interior, um resgate de tradições e um convite para
+reconectar-se com a essência da vida simples e autêntica. Aqui, o afeto é o ingrediente
+principal, e as memórias são temperos que enriquecem cada prato.
+</p>
+<p class="justificado">Navegue por nossas páginas e descubra um universo de sabores que vêm diretamente
+da terra, cultivados com carinho e preparados com a sabedoria de gerações. Das
+receitas que aquecem a alma às histórias que tocam o coração, cada elemento deste
+site foi pensado para despertar seus sentidos e reacender a chama da nostalgia.
+Prepare-se para uma jornada gastronômica que transcende o paladar, alcançando a
+alma e o espírito.
+</p>
+<p class="justificado">Explore as seções a seguir e deixe-se levar pela magia dos sabores do interior. Seja
+bem-vindo à nossa mesa, onde a tradição encontra a inovação e o afeto se manifesta
+em cada garfada.</p>
+    </section>
+
+    <section id="sobre">
+      <h1 class="titulo-com-espaco">Nossa Essência: A Paixão pelos Sabores do Interior</h1>
+      <p class="justificado">"Da Terra para a Mesa" nasceu de um desejo profundo de preservar e compartilhar a
+riqueza da culinária do interior, um tesouro de sabores e saberes que muitas vezes se
+perde na agitação da vida moderna. Somos um grupo de entusiastas da gastronomia,
+apaixonados pelas raízes e pelas histórias que cada ingrediente carrega. Acreditamos
+que a comida é muito mais do que sustento; é um elo com o passado, uma forma de
+expressar amor e um convite à convivência.
+</p>
+<p class="justificado">Nossa missão é resgatar as receitas de família, as técnicas ancestrais e os ingredientes
+esquecidos, trazendo-os para o centro da mesa e mostrando como a simplicidade
+pode ser a chave para uma experiência gastronômica inesquecível. Queremos inspirar
+você a explorar os sabores da sua própria história, a valorizar os produtores locais e a
+redescobrir o prazer de cozinhar com afeto e propósito. Junte-se a nós nesta jornada
+de redescoberta e celebração da nossa herança culinária.
+</p>
+    </section>
+    <section id="receitas">
+      <h1 class="titulo-com-espaco">Tesouros Culinários: Receitas com Sabor de Casa
+</h1>
+<img src="https://s2.glbimg.com/NCun3I9MfxHnH6SceGRm59BLDpI=/e.glbimg.com/og/ed/f/original/2018/03/08/decoracao-de-cozinha-casa-de-campo-interior-sitio-chacara-marcenaria-parede-azul-mesa-cadeiras-armarios-cristaleira-de-madeira-tapete-estampado-cortinas-de-renda-pendentes.jpg" alt="Cozinha do interior">
+<br>
+<p class="justificado">Nesta seção, você encontrará um verdadeiro tesouro de receitas que celebram os
+sabores autênticos do interior. Cada prato é uma viagem no tempo, um convite para
+reviver as memórias da infância e sentir o calor do fogão à lenha. Nossas receitas são
+mais do que simples instruções; são histórias contadas através de ingredientes frescos
+e técnicas passadas de geração em geração. Priorizamos o uso de produtos da estação
+e de pequenos produtores, garantindo não apenas o sabor, mas também a
+sustentabilidade e o apoio à economia local.
+</p>
+<p class="justificado">Prepare-se para explorar desde pratos clássicos que nunca saem de moda, como o
+frango com quiabo e a galinhada, até iguarias menos conhecidas, mas igualmente
+deliciosas, que revelam a diversidade da culinária regional. Cada receita vem
+acompanhada de dicas úteis, sugestões de harmonização e, claro, um toque de afeto
+que faz toda a diferença. Solte o avental, acenda o forno e deixe a magia acontecer na
+sua cozinha. Bom apetite!
+</p>
+<br>
+<h3>Sonho com Goiabada</h3>
+<br>
+<h4>Ingredientes</h4>
+<ul>
+  <li>8 xíc. de farinha de trigo</li>
+  <li>2 xíc. de leite morno</li>
+  <li>3/4 de xíc. de açúcar</li>
+  <li>2 colheres de sopa de manteiga ou margarinha</li>
+  <li>2 colheres de sopa de fermento</li>
+  <li>2 ovos</li>
+  <li>1 tablete de goiabada</li>
+  <br>
+  <h4>Instruções</h4>
+  <li>Junte o leite morno e o fermento e deixe descansar por 10 minutos</li>
+  <li>Junte os demais ingredientes, amasse e deixe crescer por 1 hora</li>
+  <li>Faça bolinhas com a massa, coloque goiabada dentro e deixe crescer por mais 30 minutos</li>
+  <li>Frite no óleo quente e passe os sonhos em açúcar</li>
+</ul>
+<br>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQvuF6UAiNW8Eqa2ZTufQAMpsa2snPGpjC_g&s" alt="Sonhos com Goiabada" width="300">
+<br>
+<h3>Bolachas de Mel</h3>
+<br>
+<h4>Ingredientes</h4>
+<ul>
+  <li>8 ovos</li>
+  <li>50g de açúcar</li>
+  <li>400g de mel</li>
+  <li>1 colher de sopa de bicarbonato de sódio</li>
+  <li>1 colher de sopa de fermento</li>
+  <li>Farinha de trigo até dar ponto</li>
+  <li>Chocolate de sua preferência</li>
+  <br>
+  <h4>Instruções</h4>
+  <li>Misturar todos os ingredientes e assar no forno a 180°C até dourar</li>
+  <li>Depois de assados passar no chocolate de sua preferência</li>
+</ul>
+<br>  
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxioCPg-3xLZt7_CEHdIQp7N1d12UQCkTg-Q&s" alt="Bolachas de Mel cobertas com chocolate ao leite" width="300">
+<br>
+<h3>Bolo de fubá</h3>
+<br>
+<h4>Ingredientes</h4>
+<ul>
+  <li>2 ovos</li>
+  <li>2 xíc. de açúcar</li>
+  <li>2 colheres de sopa de margarina</li>
+  <li>1 xíc. de amido de milho</li>
+  <li>1 1/2 xíc. de farinha de trigo</li>
+  <li>1 colher de sopa de fermento</li>
+  <li>Leite até dar ponto</li>
+  <br>
+  <h4>Instruções</h4>
+  <li>Misturar todos os ingredientes e assar no forno a 180°C.</li>
+  <br>
+<img src="https://receitadaboa.com.br/wp-content/uploads/2024/08/Imagem-ilustrativa-de-bolo-de-fuba-2.webp" alt="Bolo de Fubá tradicional" width="300">
+<br>
+<h3>Queijadinha</h3>
+<br>
+<h4>Ingredientes</h4>
+<br>
+<h4>Massa</h4>
+<ul>
+  <li>1 ovo</li>
+  <li>1 colher de sopa de margarina</li>
+  <li>1/2 xíc. de leite</li>
+  <li>Trigo até dar ponto</li>
+<br>
+<h4>Recheio</h4>
+  <li>3 ovos batido</li>
+  <li>1 1/2 copo de açúcar</li>
+  <li>1 côco ralado</li>
+  <br>
+  <h4>Instruções</h4>
+  <li>Misture os ingredientes da massa e cubra as forminhas</li>
+  <li>Bata od ingredientes do recheio muito bem e coloque nas forminhas sobre a massa</li>
+  <li>Asse a 180°C em forno pré-aquecido</li>
+</ul>
+<br>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJVeMHrh2Cm7e_2AhyhkOIBARcGAIFUw4Bqg&s" alt="Queijadinhas" width="300">
+<br>
+<h3>Kuque</h3>
+<br>
+<h4>Ingredientes</h4>
+<ul>
+  <li>2 xíc. de açúcar</li>
+  <li>3 xíc. de farinha de trigo</li>
+  <li>1 xíc. de amido de milho</li>
+  <li>1 tablete de margarina</li>
+  <li>4 ovos</li>
+  <li>1 1/2 xíc. de leite</li>
+  <li>Baunilha à gosto</li>
+  <li>1 colher de sopa de fermento</li>
+  <li>Um pouco de farinha de trigo, açúcar mascavo, canela e margarina para a farofa</li>
+  <br>
+  <h4>Instruções</h4>
+  <li>Misturar o açúcar com as gemas, então adicionar a margarina, leite, farinha de trigo, baunilha, claras e fermento e misture, nessa ordem.</li>
+  <li>Junte os ingredientes da farofa</li>
+  <li>Coloque a massa em uma forma e a farofa em cima</li>
+  <li>Assar no forno a 180°C</li>
+</ul>
+<br>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHxjYFvd-SoY7XRtDPc5FJPN874WXVQIZGmQ&s" alt="Kuque com farofa tradicional" width="300">
+</section>
+
+    <section id="agricultura familiar e cozinha do interior">
+      <h1 class="titulo-com-espaco">Ingredientes e Técnicas Típicas do Interior: O Elo com a Agricultura Familiar</h1>
+      <p class=""justificado>A culinária do interior brasileiro é um verdadeiro mosaico de sabores, aromas e saberes transmitidos de geração em geração. Longe dos grandes centros urbanos, onde a industrialização dos alimentos é a norma, as cozinhas rurais preservam uma conexão intrínseca com a terra, com os ciclos da natureza e, fundamentalmente, com a agricultura familiar. É nesse contexto que ingredientes autênticos e técnicas ancestrais encontram seu berço, formando a espinha dorsal de uma gastronomia rica em afeto e memória.</p>
+  <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgIANLMIwe_biqgksBVfd5IgV5lOwyveMWJg&s" alt="Vó e neto cozinhando" width="300">
+  <br>
+      <h1 class="titulo-com-espaco">A Riqueza dos Ingredientes Locais</h1>
+      <p class="justificado">Os ingredientes típicos do interior são, em sua maioria, produtos da terra, cultivados em pequenas propriedades rurais, muitas vezes sem o uso intensivo de agrotóxicos e com respeito ao meio ambiente. Essa proximidade com a fonte de produção garante não apenas a frescura e a qualidade, mas também a diversidade e a sazonalidade dos alimentos. Pense no milho, por exemplo, que se transforma em fubá para bolos e broas, em canjica para doces e salgados, ou em pamonha e curau, dependendo da região e da época do ano. O milho, em suas diversas variedades, é um pilar da agricultura familiar e da culinária caipira.</p>
+      <p class="justificado">Outros exemplos emblemáticos incluem a mandioca (ou aipim, macaxeira), base para farinhas, tapiocas, bolos e purês; o feijão, cultivado em roças e presente em quase todas as refeições, muitas vezes acompanhado de couve e torresmo; e as inúmeras frutas nativas e regionais, como jabuticaba, pequi, caju, mangaba, que são consumidas in natura, transformadas em doces, geleias, licores e sucos. As hortaliças, cultivadas em pequenas hortas caseiras, e as carnes de criação local, como frango caipira, porco e gado, também desempenham um papel central, garantindo a sustentabilidade e a autossuficiência das comunidades.</p>
+      <p class="justificado">Além disso, não podemos esquecer dos laticínios artesanais. O queijo minas, em suas diversas curas, o requeijão de corte, a manteiga de garrafa e o doce de leite caseiro são produtos que nascem da pequena produção leiteira familiar, onde o manejo do gado e o processo de fabricação são passados de pais para filhos, resultando em sabores únicos e inimitáveis, que carregam a identidade de cada produtor e de cada região.</p>
+  <br>
+        <img src="https://redesans.com.br/rede/wp-content/uploads/2017/12/Agricultura-Familiar.jpg" alt="Família do interior com colheita">
+  <br>     
+      <h1 class="titulo-com-espaco">Técnicas Culinárias que Contam Histórias</h1>
+      <p class="justificado">As técnicas culinárias do interior são um reflexo da vida no campo: práticas, eficientes e que valorizam cada parte do alimento. Muitas delas são adaptadas à disponibilidade de recursos e à necessidade de conservação dos alimentos, como a defumação de carnes e embutidos, a produção de conservas e compotas, e a secagem de grãos e ervas. O uso do fogão a lenha, por exemplo, não é apenas uma questão de tradição, mas uma técnica que confere um sabor defumado e um cozimento lento e uniforme aos alimentos, impossível de replicar em fogões convencionais. Pratos como o feijão tropeiro, a galinhada e o frango com quiabo ganham uma profundidade de sabor inigualável quando preparados dessa forma.</p>
+      <p class="justificado">Outra técnica fundamental é o aproveitamento integral dos alimentos. Nada se perde na cozinha do interior. Cascas de frutas viram doces, talos de verduras são incorporados em refogados, e sobras de carne se transformam em recheios saborosos. Essa filosofia de não desperdício é uma lição de sustentabilidade e criatividade, nascida da necessidade e aprimorada pela sabedoria popular. A fermentação, presente na produção de pães, queijos e bebidas como a cachaça artesanal, também é uma técnica milenar que transforma e preserva os alimentos, agregando complexidade de sabor e valor nutricional.</p>
+  <br>   
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwU2q9OTza5qhOW3FJXg9ae9i8DyonbMXBgA&s" alt="Idosa na cozinha">
+  <br>      
+      <h1 class="titulo-com-espaco">A Agricultura Familiar: O Coração da Culinária do Interior</h1>
+      <p class="justificado">A relação entre os ingredientes, as técnicas e a agricultura familiar é simbiótica e indissociável. A agricultura familiar é a base que sustenta a diversidade e a autenticidade da culinária do interior. São os pequenos agricultores que cultivam a terra, criam os animais e processam os alimentos de forma artesanal, mantendo vivas as sementes crioulas, as raças nativas e os métodos de cultivo que respeitam o tempo da natureza.</p>
+      <p class="justificado">Essa forma de produção não visa apenas o lucro, mas a subsistência da família, a preservação do conhecimento tradicional e a manutenção da cultura local. Ao consumir produtos da agricultura familiar, estamos não apenas garantindo alimentos mais frescos, saudáveis e saborosos, mas também apoiando um modelo de produção que promove a justiça social, a sustentabilidade ambiental e a valorização do trabalho no campo. É um ciclo virtuoso: a demanda por esses produtos incentiva a agricultura familiar, que por sua vez, continua a fornecer os ingredientes essenciais para que as técnicas e os sabores do interior permaneçam vivos e vibrantes.</p>
+      <p class="justificado">Em suma, a culinária do interior é um reflexo direto da agricultura familiar. Cada prato, cada ingrediente, cada técnica é uma celebração da resiliência, da sabedoria e do afeto das famílias que, com suas mãos e seu trabalho, alimentam não apenas o corpo, mas também a alma e a memória de um país. É um convite para reconhecer e valorizar a importância desses guardiões da nossa herança gastronômica e cultural.</p>
+  
+  <br>    
+    </section>
+
+    <section id="contato">
+      <h1>Contato</h1>
+      <p>Para mais informações, envie um e-mail para:
+        <a href="yolanda.santana@escola.pr.gov.br" aria-label="Enviar e-mail para yolanda.santana@escola.pr.gov.br">yolanda.santana@escola.pr.gov.br</a>
+      </p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy;2025 Yolanda Santana 3°D ProgramaçãoII Profª Laura.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
