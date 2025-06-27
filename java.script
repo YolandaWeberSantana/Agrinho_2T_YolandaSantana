@@ -1,0 +1,48 @@
+function mostrarAlerta() {
+  alert("Obrigado por visitar nosso site!");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+            const body = document.body;
+            const decreaseFontBtn = document.getElementById("decrease-font");
+            const resetFontBtn = document.getElementById("reset-font");
+            const increaseFontBtn = document.getElementById("increase-font");
+            const toggleContrastBtn = document.getElementById("toggle-contrast");
+
+            // Funções para controle de tamanho da fonte
+            let currentFontSizeIndex = 1; // 0: small, 1: medium (default), 2: large, 3: extra-large
+            const fontClasses = ["font-small", "font-medium", "font-large", "font-extra-large"];
+
+            function updateFontSizeClass() {
+                fontClasses.forEach(cls => body.classList.remove(cls));
+                body.classList.add(fontClasses[currentFontSizeIndex]);
+            }
+
+            decreaseFontBtn.addEventListener("click", () => {
+                if (currentFontSizeIndex > 0) {
+                    currentFontSizeIndex--;
+                    updateFontSizeClass();
+                }
+            });
+
+            resetFontBtn.addEventListener("click", () => {
+                currentFontSizeIndex = 1; // Volta para o tamanho médio
+                updateFontSizeClass();
+            });
+
+            increaseFontBtn.addEventListener("click", () => {
+                if (currentFontSizeIndex < fontClasses.length - 1) {
+                    currentFontSizeIndex++;
+                    updateFontSizeClass();
+                }
+            });
+
+            // Função para alternar o modo de alto contraste
+            toggleContrastBtn.addEventListener("click", () => {
+                body.classList.toggle("high-contrast");
+            });
+
+            // Define o tamanho da fonte inicial ao carregar a página
+            updateFontSizeClass();
+        })
+    </script>
